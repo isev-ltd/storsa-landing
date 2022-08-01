@@ -108,7 +108,7 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink target="_blank" href="https://account.storsa.app">Sign in</NavLink>
             </div>
-            <Button href="/register" color="blue">
+            <Button href="#signup" color="blue">
               <span>
                 Sign up to the beta
               </span>

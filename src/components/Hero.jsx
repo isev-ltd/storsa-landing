@@ -31,7 +31,7 @@ export function Hero() {
         Storsa is a self-hostable, open-core, bookmarking service built in Laravel.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Sign up for the beta</Button>
+        <Button href="#signup">Sign up for the beta</Button>
       </div>
     </Container>
   )

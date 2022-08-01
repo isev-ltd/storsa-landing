@@ -4,14 +4,36 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
+function submitForm(e) {
+  e.preventDefault();
+  window.open('https://buttondown.email/storsa', 'popupwindow')
+}
 export function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
+              <div class="flex flex-col space-y-10">
+              <h2 class="text-4xl font-semibold text-center">Excited? Join the waiting list to be first in line!</h2>
+                <a id="signup"></a>
+              <form
+                  action="https://buttondown.email/api/emails/embed-subscribe/storsa"
+                  method="post"
+                  target="popupwindow"
+                  className="embeddable-buttondown-form"
+              >
+                <label class="sr-only" htmlFor="bd-email">Enter your email</label>
+                <div class="flex justify-center">
+                <input type="email" name="email" id="bd-email" class="rounded-l-xl shadow px-4 py-2 focus:border-rose-600 focus:ring-rose-600" placeholder="fry@theplanetexpresscompany.co"/>
+                <input type="submit" class="rounded-r-xl bg-rose-600 text-rose-100 font-bold text-lg px-4 py-2" value="Join"/>
+                </div>
+                <p class="text-center">
+                  <a href="https://buttondown.email" target="_blank" class=" italic opacity-50 text-sm">Powered by Buttondown.</a>
+                </p>
+              </form>
+              </div>
               {/* <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#pricing">Pricing</NavLink> */}
@@ -45,7 +67,7 @@ export function Footer() {
               </svg>
             </Link>*/}
           </div>
-          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
+          <p className="w-full mt-6 text-sm text-slate-500 sm:mt-0 text-center">
             Copyright &copy; {new Date().getFullYear()} Storsa. All rights
             reserved.
           </p>
