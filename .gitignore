@@ -1,1 +1,7 @@
 /node_modules
+/.next/static/webpack
+/.next/cache
+/.next/server
+/.next/static
+/out
+.next
