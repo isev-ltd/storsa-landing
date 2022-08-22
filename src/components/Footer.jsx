@@ -69,7 +69,7 @@ export function Footer() {
           </div>
           <p className="w-full mt-6 text-sm text-slate-500 sm:mt-0 text-center">
             Copyright &copy; {new Date().getFullYear()} Storsa. All rights
-            reserved.
+            reserved. <a href="https://account.storsa.app/terms-of-service" target="_blank">Terms and Conditions</a> | <a href="https://account.storsa.app/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://account.storsa.app/refunds" target="_blank">Refund Policy</a>
           </p>
         </div>
       </Container>
