@@ -11,16 +11,16 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Web Extension',
-    description:
-      "Easily add and view bookmarks from the web extension.",
-    image: screenshotWebExtension,
-  },
-  {
     title: 'Web App',
     description:
       "Manage your bookmarks from any device with internet access.",
     image: screenshotWebApp,
+  },
+  {
+    title: 'Web Extension',
+    description:
+        "Easily add and view bookmarks from the web extension.",
+    image: screenshotWebExtension,
   }
 ]
 
